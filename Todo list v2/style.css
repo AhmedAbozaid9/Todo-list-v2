@@ -1,0 +1,86 @@
+html{
+    height: 100vh;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(#0a043c,#03506f);
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+}
+*:focus{
+    outline: 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    margin-top: 6rem;
+    padding: 7px;
+}
+/* the create button */
+.createTask, input{
+    border: none;
+}
+.createTask{
+    font-size: 2rem;
+    color: #bbbbbb;
+}
+.createTask:hover{
+    background-color:#bbbbbb;
+    color: #ffe3d8;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+/* the input */
+input{
+    padding: 10px;
+    width: 400px;
+}
+input:focus{
+    background-color: #bbbbbb;
+    transition: 0.2s ease;
+}
+.wrapper{
+    display: flex;
+    list-style: none;
+}
+.task{
+    text-align: left;
+    width: 350px;
+    display: inline-block;
+    margin: 0 auto;
+    list-style: none;
+    margin: 1rem;
+    font-size: 2rem;
+    color: rgb(34, 34, 34); 
+
+}
+.task li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    background-color: white;
+    padding: 0.4rem;
+}
+.task button{
+    font-size: 1.2rem;
+    width: 13.1%;
+    vertical-align: middle;
+    padding: 0.95rem;
+    border: none;
+    cursor: pointer;
+}
+.completedBtn{
+    background-color: rgb(7, 146, 7);
+}
+.trashBtn{
+background-color: rgb(252, 73, 3);
+}
+.completed{
+    opacity: 0.5;
+}
+.notCompleted{
+    opacity: 1;
+}
